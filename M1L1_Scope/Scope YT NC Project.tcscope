@@ -109,7 +109,7 @@
             <Comment></Comment>
             <ShowName>true</ShowName>
             <Precision>6</Precision>
-            <ScaleMode>AutoGrowOnly</ScaleMode>
+            <ScaleMode>AutoGrowNShrink</ScaleMode>
           </Style>
           <Channels>
             <ScopeChannelSerializable>
@@ -123,12 +123,12 @@
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>AXES.y_up.ACTPOS</SymbolName>
+                <SymbolName>AXES.pitch.ACTPOS</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
                 <FileHandle>289</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
-                <AmsNetIdString>172.21.148.1.1.1</AmsNetIdString>
+                <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
                 <Disabled>false</Disabled>
                 <Oversample>0</Oversample>
@@ -348,12 +348,12 @@
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>AXES.y_up.SETPOS</SymbolName>
+                <SymbolName>AXES.pitch.SETPOS</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
                 <FileHandle>290</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
-                <AmsNetIdString>172.21.148.1.1.1</AmsNetIdString>
+                <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
                 <Disabled>false</Disabled>
                 <Oversample>0</Oversample>
@@ -593,7 +593,7 @@
             <Comment></Comment>
             <ShowName>true</ShowName>
             <Precision>6</Precision>
-            <ScaleMode>AutoGrowOnly</ScaleMode>
+            <ScaleMode>AutoGrowNShrink</ScaleMode>
           </Style>
           <Channels>
             <ScopeChannelSerializable>
@@ -607,12 +607,12 @@
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>AXES.y_up.ACTVELO</SymbolName>
+                <SymbolName>AXES.pitch.ACTVELO</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
                 <FileHandle>291</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
-                <AmsNetIdString>172.21.148.1.1.1</AmsNetIdString>
+                <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
                 <Disabled>false</Disabled>
                 <Oversample>0</Oversample>
@@ -832,12 +832,12 @@
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>AXES.y_up.SETVELO</SymbolName>
+                <SymbolName>AXES.pitch.SETVELO</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
                 <FileHandle>292</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
-                <AmsNetIdString>172.21.148.1.1.1</AmsNetIdString>
+                <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
                 <Disabled>false</Disabled>
                 <Oversample>0</Oversample>
@@ -1091,12 +1091,12 @@
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>AXES.y_up.POSDIFF</SymbolName>
+                <SymbolName>AXES.pitch.POSDIFF</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
                 <FileHandle>293</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
-                <AmsNetIdString>172.21.148.1.1.1</AmsNetIdString>
+                <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
                 <Disabled>false</Disabled>
                 <Oversample>0</Oversample>
@@ -1336,7 +1336,7 @@
             <Comment></Comment>
             <ShowName>true</ShowName>
             <Precision>6</Precision>
-            <ScaleMode>AutoGrowOnly</ScaleMode>
+            <ScaleMode>AutoGrowNShrink</ScaleMode>
           </Style>
           <Channels>
             <ScopeChannelSerializable>
@@ -1355,7 +1355,7 @@
                 <IsSymbolBased>true</IsSymbolBased>
                 <FileHandle>296</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
-                <AmsNetIdString>172.21.148.1.1.1</AmsNetIdString>
+                <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
                 <Disabled>false</Disabled>
                 <Oversample>0</Oversample>
@@ -1580,7 +1580,7 @@
                 <IsSymbolBased>true</IsSymbolBased>
                 <FileHandle>297</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
-                <AmsNetIdString>172.21.148.1.1.1</AmsNetIdString>
+                <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
                 <Disabled>false</Disabled>
                 <Oversample>0</Oversample>
@@ -1820,7 +1820,7 @@
             <Comment></Comment>
             <ShowName>true</ShowName>
             <Precision>6</Precision>
-            <ScaleMode>AutoGrowOnly</ScaleMode>
+            <ScaleMode>AutoGrowNShrink</ScaleMode>
           </Style>
           <Channels>
             <ScopeChannelSerializable>
@@ -1839,7 +1839,7 @@
                 <IsSymbolBased>true</IsSymbolBased>
                 <FileHandle>298</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
-                <AmsNetIdString>172.21.148.1.1.1</AmsNetIdString>
+                <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
                 <Disabled>false</Disabled>
                 <Oversample>0</Oversample>
@@ -2064,7 +2064,7 @@
                 <IsSymbolBased>true</IsSymbolBased>
                 <FileHandle>299</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
-                <AmsNetIdString>172.21.148.1.1.1</AmsNetIdString>
+                <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
                 <Disabled>false</Disabled>
                 <Oversample>0</Oversample>
@@ -2304,7 +2304,7 @@
             <Comment></Comment>
             <ShowName>true</ShowName>
             <Precision>6</Precision>
-            <ScaleMode>AutoGrowOnly</ScaleMode>
+            <ScaleMode>AutoGrowNShrink</ScaleMode>
           </Style>
           <Channels>
             <ScopeChannelSerializable>
@@ -2323,7 +2323,7 @@
                 <IsSymbolBased>true</IsSymbolBased>
                 <FileHandle>300</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
-                <AmsNetIdString>172.21.148.1.1.1</AmsNetIdString>
+                <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
                 <Disabled>false</Disabled>
                 <Oversample>0</Oversample>
@@ -2545,7 +2545,7 @@
           <Name>Gantry X</Name>
           <Style>
             <Visible>true</Visible>
-            <Enabled>true</Enabled>
+            <Enabled>false</Enabled>
             <ColorValue>-13676721</ColorValue>
             <UseGrid>true</UseGrid>
             <Ticks>10</Ticks>
@@ -2563,7 +2563,7 @@
             <Comment></Comment>
             <ShowName>true</ShowName>
             <Precision>6</Precision>
-            <ScaleMode>AutoGrowOnly</ScaleMode>
+            <ScaleMode>AutoGrowNShrink</ScaleMode>
           </Style>
           <Channels>
             <ScopeChannelSerializable>
@@ -2573,7 +2573,7 @@
               <Acquisition>
                 <DataType>INT64</DataType>
                 <IndexGroup>16448</IndexGroup>
-                <IndexOffset>646048</IndexOffset>
+                <IndexOffset>638016</IndexOffset>
                 <Unit />
                 <TargetPort>851</TargetPort>
                 <VariableSize>8</VariableSize>
@@ -2582,7 +2582,7 @@
                 <IsSymbolBased>true</IsSymbolBased>
                 <FileHandle>294</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
-                <AmsNetIdString>172.21.148.1.1.1</AmsNetIdString>
+                <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>100000</SampleTime>
                 <Disabled>false</Disabled>
                 <Oversample>0</Oversample>
@@ -2590,7 +2590,7 @@
                 <ForceOversampling>false</ForceOversampling>
                 <IsArray>false</IsArray>
                 <ArrayLength>0</ArrayLength>
-                <ContextMask>0</ContextMask>
+                <ContextMask>2</ContextMask>
                 <TimeOffset>0</TimeOffset>
                 <DataAccess>
                   <Source>TwinCAT</Source>
@@ -2804,7 +2804,7 @@
           <Name>Gantry Y</Name>
           <Style>
             <Visible>true</Visible>
-            <Enabled>true</Enabled>
+            <Enabled>false</Enabled>
             <ColorValue>-13676721</ColorValue>
             <UseGrid>true</UseGrid>
             <Ticks>10</Ticks>
@@ -2822,7 +2822,7 @@
             <Comment></Comment>
             <ShowName>true</ShowName>
             <Precision>6</Precision>
-            <ScaleMode>AutoGrowOnly</ScaleMode>
+            <ScaleMode>AutoGrowNShrink</ScaleMode>
           </Style>
           <Channels>
             <ScopeChannelSerializable>
@@ -2832,7 +2832,7 @@
               <Acquisition>
                 <DataType>INT64</DataType>
                 <IndexGroup>16448</IndexGroup>
-                <IndexOffset>646056</IndexOffset>
+                <IndexOffset>638024</IndexOffset>
                 <Unit />
                 <TargetPort>851</TargetPort>
                 <VariableSize>8</VariableSize>
@@ -2841,7 +2841,7 @@
                 <IsSymbolBased>true</IsSymbolBased>
                 <FileHandle>295</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
-                <AmsNetIdString>172.21.148.1.1.1</AmsNetIdString>
+                <AmsNetIdString>172.21.148.46.1.1</AmsNetIdString>
                 <SampleTime>100000</SampleTime>
                 <Disabled>false</Disabled>
                 <Oversample>0</Oversample>
@@ -2849,7 +2849,7 @@
                 <ForceOversampling>false</ForceOversampling>
                 <IsArray>false</IsArray>
                 <ArrayLength>0</ArrayLength>
-                <ContextMask>0</ContextMask>
+                <ContextMask>2</ContextMask>
                 <TimeOffset>0</TimeOffset>
                 <DataAccess>
                   <Source>TwinCAT</Source>
@@ -3071,7 +3071,7 @@
         <Precision>6</Precision>
       </CursorModule>
       <Operating>
-        <DisplayWidth>12000000000</DisplayWidth>
+        <DisplayWidth>100000000</DisplayWidth>
       </Operating>
       <ChartType>XT</ChartType>
       <SortPriority>-1</SortPriority>

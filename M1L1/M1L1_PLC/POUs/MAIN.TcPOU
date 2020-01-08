@@ -1,30 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4020.14">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
   <POU Name="MAIN" Id="{2ce36a91-321d-4828-96a2-d7e21b9a58d0}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
-//	{attribute 'TcLinkTo' := '.bLimFwd:=TIIB[y_up]^STM Status^Status^Digital input 1; .bLimBwd:=TIIB[y_up]^STM Status^Status^Digital input 2; .bSTO:=TIIB[di]^Channel 1^Input'}	
-	{attribute 'TcLinkTo':='.bLimFwd:=TIIB[y_up]^STM Status^Status^Digital input 1'}		
+(*
     M1: DUT_MotionStage:=(nCommand:=3); // Yup
-//	{attribute 'TcLinkTo' := '.bLimFwd:=TIIB[y_dwn]^STM Status^Status^Digital input 1; .bLimBwd:=TIIB[y_dwn]^STM Status^Status^Digital input 2'}
 	M2: DUT_MotionStage:=(nCommand:=3); // Ydwn
-//	{attribute 'TcLinkTo' := '.bLimFwd:=TIIB[x_up]^STM Status^Status^Digital input 1; .bLimBwd:=TIIB[x_up]^STM Status^Status^Digital input 2'}	
 	M3: DUT_MotionStage:=(nCommand:=3); // Xup
-//	{attribute 'TcLinkTo' := '.bLimFwd:=TIIB[x_dwn]^STM Status^Status^Digital input 1; .bLimBwd:=TIIB[x_dwn]^STM Status^Status^Digital input 2'}
 	M4: DUT_MotionStage:=(nCommand:=3); // Xdwn
-//	{attribute 'TcLinkTo' := '.bLimFwd:=TIIB[pitch]^STM Status^Status^Digital input 1; .bLimBwd:=TIIB[pitch]^STM Status^Status^Digital input 2'}	
 	M5: DUT_MotionStage:=(nCommand:=3); // PitchCoarse
+*)
 	
 	fbMotionStage_x_up, fbMotionStage_x_dwn, fbMotionStage_y_up, fbMotionStage_y_dwn, fbMotionStage_pitch : FB_MotionStage;
 
 	stoEnable AT %I* : BOOL;
-	{attribute 'TcLinkTo' := '.Count:=TIIB[1-x_up_2-x_dwn]^FB Inputs Channel 1^Position'}	
 	x_up_enc  AT %I*: ST_RenishawAbsEnc;
-	{attribute 'TcLinkTo' := '.Count:=TIIB[1-x_up_2-x_dwn]^FB Inputs Channel 2^Position'}
 	x_dwn_enc  AT %I*: ST_RenishawAbsEnc;
-	{attribute 'TcLinkTo' := '.Count:=TIIB[1-y_up_2-y_dwn]^FB Inputs Channel 1^Position'}	
 	y_up_enc  AT %I*: ST_RenishawAbsEnc;
-	{attribute 'TcLinkTo' := '.Count:=TIIB[1-y_up_2-y_dwn]^FB Inputs Channel 2^Position'}
 	y_dwn_enc  AT %I*: ST_RenishawAbsEnc;
 
 	// Auto coupling function block
@@ -42,6 +34,13 @@ VAR
 	nCurrGantryY : LINT;
 	nGantryTolX : LINT := 25000;
 	nGantryTolY : LINT := 25000;
+	
+	// Piezo Control:
+	fbPitchControl : FB_PitchControl;
+
+	// Expert mode permits direct access to individual acutators.
+	ExpertMode	:	BOOL := FALSE;
+	PitchManualMode: BOOL := FALSE;
 END_VAR]]></Declaration>
     <Implementation>
       <ST><![CDATA[// M1K3
@@ -85,11 +84,13 @@ fbMotionStage_y_up  (stMotionStage:=M1);
 fbMotionStage_y_dwn (stMotionStage:=M2);
 fbMotionStage_x_up  (stMotionStage:=M3);
 fbMotionStage_x_dwn (stMotionStage:=M4);
-fbMotionStage_pitch (stMotionStage:=M5);]]></ST>
+fbMotionStage_pitch (stMotionStage:=M5);
+
+// Pitch Control
+fbPitchControl(Pitch:=M1L0_Pitch,
+                   DirectPiezoMode:=(ExpertMode AND PitchManualMode),
+                   q_xDone=>M1L0_Pitch.Axis.bDone,
+                   q_xBusy=>M1L0_Pitch.Axis.bBusy);]]></ST>
     </Implementation>
-    <LineIds Name="MAIN">
-      <LineId Id="3" Count="40" />
-      <LineId Id="2" Count="0" />
-    </LineIds>
   </POU>
 </TcPlcObject>

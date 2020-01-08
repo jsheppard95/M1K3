@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4020.14">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.12">
   <POU Name="P_Serial_Com" Id="{fa981f30-4d2c-4d48-ab6c-00ec78d696a1}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM P_Serial_Com
 VAR
@@ -17,14 +17,7 @@ fbSerialLineControl_EL6001_P1(
 	TxBuffer:= Serial_P1_SerialTXBuffer,
 	RxBuffer:= Serial_P1_SerialRXBuffer,
 	Error=> ,
-	ErrorID=> );
-	]]></ST>
+	ErrorID=> );]]></ST>
     </Implementation>
-    <LineIds Name="P_Serial_Com">
-      <LineId Id="52" Count="0" />
-      <LineId Id="3" Count="9" />
-      <LineId Id="86" Count="0" />
-      <LineId Id="2" Count="0" />
-    </LineIds>
   </POU>
 </TcPlcObject>

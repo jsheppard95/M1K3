@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
+  <GVL Name="GVL_Devices" Id="{cb7cf638-cc80-4f58-a532-470704faedf8}">
+    <Declaration><![CDATA[VAR_GLOBAL
+	// Axes
+    M1: DUT_MotionStage:=(nCommand:=3); // Yup
+	M2: DUT_MotionStage:=(nCommand:=3); // Ydwn
+	M3: DUT_MotionStage:=(nCommand:=3); // Xup
+	M4: DUT_MotionStage:=(nCommand:=3); // Xdwn
+	M5: DUT_MotionStage:=(nCommand:=3); // PitchCoarse
+
+	M1L0_Pitch	    :	HOMS_PitchMechanism := (
+		ReqPosLimHi := 56000,
+		ReqPosLimLo := 54150,
+		diEncPosLimHi := 10126850,
+		diEncPosLimLo := 9727550);
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>
