@@ -6,7 +6,7 @@
     <ProjectGuid>{9a0d7dca-0ee6-474e-b222-8b1100f1f227}</ProjectGuid>
     <SubObjectsSortedByName>True</SubObjectsSortedByName>
     <Name>M1L1_PLC</Name>
-    <ProgramVersion>3.1.4020.5</ProgramVersion>
+    <ProgramVersion>3.1.4022.7</ProgramVersion>
     <Application>{181d0dcd-8639-4883-835a-d3a88411a5ef}</Application>
     <TypeSystem>{3eaf1329-71f8-4400-8f46-3740b634b40b}</TypeSystem>
     <Implicit_Task_Info>{0f0ca5e9-8c43-4dc3-a559-5fbd81683ddf}</Implicit_Task_Info>
@@ -85,6 +85,7 @@
   <ItemGroup>
     <Folder Include="Common\DUTs" />
     <Folder Include="Common\POUs" />
+    <Folder Include="Common\POUs\Helpers" />
     <Folder Include="Common\POUs\HOMS_FBs" />
     <Folder Include="DUTs" />
     <Folder Include="GVLs" />
