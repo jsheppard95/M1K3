@@ -84,9 +84,6 @@
     <Compile Include="POUs\Serial Comm\P_Serial_Com.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="SerialIO.TcTTO">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="Visualization Manager.TcVMO">
       <SubType>Code</SubType>
     </Compile>
@@ -186,7 +183,9 @@
       <DefaultResolution>Tc3_Module, * (Beckhoff Automation GmbH)</DefaultResolution>
       <Namespace>Tc3_Module</Namespace>
     </PlaceholderReference>
-    <PlaceholderReference Include="VisuDialogs" />
+    <PlaceholderReference Include="VisuDialogs">
+      <Namespace>VisuDialogs</Namespace>
+    </PlaceholderReference>
   </ItemGroup>
   <ItemGroup>
     <LibraryReference Include="lcls-twincat-motion,0.0.0,SLAC">
