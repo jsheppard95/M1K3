@@ -35,6 +35,8 @@ VAR
 	nCurrGantryY : LINT;
 	nGantryTolX : LINT := 50000;
 	nGantryTolY : LINT := 50000;
+	fCurrGantryX_um : LREAL;
+	fCurrGantryY_um : LREAL;
 	
 	// Piezo Control:
 	fbPitchControl : FB_PitchControl;
@@ -60,7 +62,9 @@ x_dwn_enc.Ref := 20865800;
 
 // Gantry Differences to monitor
 nCurrGantryY := ((ULINT_TO_LINT(y_up_enc.Count) - ULINT_TO_LINT(y_up_enc.Ref)) - (ULINT_TO_LINT(y_dwn_enc.Count) - ULINT_TO_LINT(y_dwn_enc.Ref)));
+fCurrGantryY_um := LINT_TO_LREAL(nCurrGantryY)/1000.0;
 nCurrGantryX := ((ULINT_TO_LINT(x_up_enc.Count) - ULINT_TO_LINT(x_up_enc.Ref)) - (ULINT_TO_LINT(x_dwn_enc.Count) - ULINT_TO_LINT(x_dwn_enc.Ref)));
+fCurrGantryX_um := LINT_TO_LREAL(nCurrGantryX)/1000.0;
 
 // E-stop
 M1.bHardwareEnable := bSTOEnable1 AND bSTOEnable2;

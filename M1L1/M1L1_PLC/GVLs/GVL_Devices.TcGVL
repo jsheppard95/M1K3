@@ -8,6 +8,11 @@
 	M3: DUT_MotionStage:=(nCommand:=3); // Xup
 	M4: DUT_MotionStage:=(nCommand:=3); // Xdwn
 	M5: DUT_MotionStage:=(nCommand:=3); // PitchCoarse
+	M1_Extras : DUT_MotionStage_Extras;
+	M2_Extras : DUT_MotionStage_Extras;
+	M3_Extras : DUT_MotionStage_Extras;
+	M4_Extras : DUT_MotionStage_Extras;
+	M5_Extras : DUT_MotionStage_Extras;
 
 	M1L0_Pitch	    :	HOMS_PitchMechanism := (
 		ReqPosLimHi := 56000,

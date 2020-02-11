@@ -123,7 +123,7 @@
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>AXES.pitch.ACTPOS</SymbolName>
+                <SymbolName>AXES.y_up.ACTPOS</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
                 <FileHandle>73</FileHandle>
@@ -348,7 +348,7 @@
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>AXES.pitch.SETPOS</SymbolName>
+                <SymbolName>AXES.y_up.SETPOS</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
                 <FileHandle>74</FileHandle>
@@ -575,7 +575,7 @@
           <Name>Velocity</Name>
           <Style>
             <Visible>true</Visible>
-            <Enabled>true</Enabled>
+            <Enabled>false</Enabled>
             <ColorValue>-16744384</ColorValue>
             <UseGrid>true</UseGrid>
             <Ticks>10</Ticks>
@@ -607,7 +607,7 @@
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>AXES.pitch.ACTVELO</SymbolName>
+                <SymbolName>AXES.y_up.ACTVELO</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
                 <FileHandle>75</FileHandle>
@@ -832,7 +832,7 @@
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>AXES.pitch.SETVELO</SymbolName>
+                <SymbolName>AXES.y_up.SETVELO</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
                 <FileHandle>76</FileHandle>
@@ -1091,7 +1091,7 @@
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>AXES.pitch.POSDIFF</SymbolName>
+                <SymbolName>AXES.y_up.POSDIFF</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
                 <FileHandle>77</FileHandle>
@@ -1318,7 +1318,7 @@
           <Name>Pos-Slave</Name>
           <Style>
             <Visible>true</Visible>
-            <Enabled>false</Enabled>
+            <Enabled>true</Enabled>
             <ColorValue>-13676721</ColorValue>
             <UseGrid>true</UseGrid>
             <Ticks>10</Ticks>
@@ -1345,12 +1345,12 @@
               <IdentHandle>6</IdentHandle>
               <Acquisition>
                 <DataType>REAL64</DataType>
-                <IndexGroup>16649</IndexGroup>
+                <IndexGroup>16647</IndexGroup>
                 <IndexOffset>65538</IndexOffset>
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>Axes.x_dwn.ActPos</SymbolName>
+                <SymbolName>Axes.y_dwn.ActPos</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
                 <FileHandle>78</FileHandle>
@@ -1570,12 +1570,12 @@
               <IdentHandle>7</IdentHandle>
               <Acquisition>
                 <DataType>REAL64</DataType>
-                <IndexGroup>16649</IndexGroup>
+                <IndexGroup>16647</IndexGroup>
                 <IndexOffset>10</IndexOffset>
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>Axes.x_dwn.SetPos</SymbolName>
+                <SymbolName>Axes.y_dwn.SetPos</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
                 <FileHandle>79</FileHandle>
@@ -1829,12 +1829,12 @@
               <IdentHandle>8</IdentHandle>
               <Acquisition>
                 <DataType>REAL64</DataType>
-                <IndexGroup>16649</IndexGroup>
+                <IndexGroup>16647</IndexGroup>
                 <IndexOffset>65541</IndexOffset>
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>Axes.x_dwn.ActVelo</SymbolName>
+                <SymbolName>Axes.y_dwn.ActVelo</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
                 <FileHandle>80</FileHandle>
@@ -2054,12 +2054,12 @@
               <IdentHandle>9</IdentHandle>
               <Acquisition>
                 <DataType>REAL64</DataType>
-                <IndexGroup>16649</IndexGroup>
+                <IndexGroup>16647</IndexGroup>
                 <IndexOffset>14</IndexOffset>
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>Axes.x_dwn.SetVelo</SymbolName>
+                <SymbolName>Axes.y_dwn.SetVelo</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
                 <FileHandle>81</FileHandle>
@@ -2313,12 +2313,12 @@
               <IdentHandle>10</IdentHandle>
               <Acquisition>
                 <DataType>REAL64</DataType>
-                <IndexGroup>16649</IndexGroup>
+                <IndexGroup>16647</IndexGroup>
                 <IndexOffset>131087</IndexOffset>
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>Axes.x_dwn.PosDiff</SymbolName>
+                <SymbolName>Axes.y_dwn.PosDiff</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
                 <FileHandle>82</FileHandle>
@@ -3071,7 +3071,7 @@
         <Precision>6</Precision>
       </CursorModule>
       <Operating>
-        <DisplayWidth>1500000000</DisplayWidth>
+        <DisplayWidth>1700000000</DisplayWidth>
       </Operating>
       <ChartType>XT</ChartType>
       <SortPriority>-1</SortPriority>
