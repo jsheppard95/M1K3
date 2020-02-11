@@ -13,7 +13,8 @@ VAR
 	
 	fbMotionStage_x_up, fbMotionStage_x_dwn, fbMotionStage_y_up, fbMotionStage_y_dwn, fbMotionStage_pitch : FB_MotionStage;
 
-	stoEnable AT %I* : BOOL;
+	bSTOEnable1 AT %I* : BOOL;
+	bSTOEnable2 AT %I* : BOOL;
 	x_up_enc  AT %I*: ST_RenishawAbsEnc;
 	x_dwn_enc  AT %I*: ST_RenishawAbsEnc;
 	y_up_enc  AT %I*: ST_RenishawAbsEnc;
@@ -32,8 +33,8 @@ VAR
 	// Gantry variables
 	nCurrGantryX : LINT;
 	nCurrGantryY : LINT;
-	nGantryTolX : LINT := 25000;
-	nGantryTolY : LINT := 25000;
+	nGantryTolX : LINT := 50000;
+	nGantryTolY : LINT := 50000;
 	
 	// Piezo Control:
 	fbPitchControl : FB_PitchControl;
@@ -62,11 +63,11 @@ nCurrGantryY := ((ULINT_TO_LINT(y_up_enc.Count) - ULINT_TO_LINT(y_up_enc.Ref)) -
 nCurrGantryX := ((ULINT_TO_LINT(x_up_enc.Count) - ULINT_TO_LINT(x_up_enc.Ref)) - (ULINT_TO_LINT(x_dwn_enc.Count) - ULINT_TO_LINT(x_dwn_enc.Ref)));
 
 // E-stop
-M1.bHardwareEnable := stoEnable;
-M2.bHardwareEnable := stoEnable;
-M3.bHardwareEnable := stoEnable;
-M4.bHardwareEnable := stoEnable;
-M5.bHardwareEnable := stoEnable;
+M1.bHardwareEnable := bSTOEnable1 AND bSTOEnable2;
+M2.bHardwareEnable := bSTOEnable1 AND bSTOEnable2;
+M3.bHardwareEnable := bSTOEnable1 AND bSTOEnable2;
+M4.bHardwareEnable := bSTOEnable1 AND bSTOEnable2;
+M5.bHardwareEnable := bSTOEnable1 AND bSTOEnable2;
 
 
 // Start Autocoupling
@@ -87,10 +88,10 @@ fbMotionStage_x_dwn (stMotionStage:=M4);
 fbMotionStage_pitch (stMotionStage:=M5);
 
 // Pitch Control
-fbPitchControl(Pitch:=M1L0_Pitch,
-                   DirectPiezoMode:=(ExpertMode AND PitchManualMode),
-                   q_xDone=>M1L0_Pitch.Axis.bDone,
-                   q_xBusy=>M1L0_Pitch.Axis.bBusy);]]></ST>
+//fbPitchControl(Pitch:=M1L0_Pitch,
+//                   DirectPiezoMode:=(ExpertMode AND PitchManualMode),
+//                   q_xDone=>M1L0_Pitch.Axis.bDone,
+//                   q_xBusy=>M1L0_Pitch.Axis.bBusy);]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>

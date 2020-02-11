@@ -1342,11 +1342,13 @@ External Setpoint Generation:
 			<AxisPara>
 				<General UnitName="um"/>
 				<Dynamic Acceleration="5050" Deceleration="5050" Jerk="5100500" DelayTime="0.008"/>
-				<Velo Maximum="500"/>
+				<Velo Maximum="100"/>
 				<OtherSettings AllowMotionCmdToSlave="true"/>
 			</AxisPara>
 			<Encoder Name="Enc" EncType="29">
 				<EncPara ScaleFactorNumerator="1" ScaleFactorDenominator="1000" MaxCount="#xffffffff">
+					<SoftEndMinControl Enable="true" Range="10000"/>
+					<SoftEndMaxControl Enable="true" Range="79999"/>
 					<Inc RefSoftSyncMask="#x0000ffff"/>
 				</EncPara>
 				<Vars VarGrpType="1">
@@ -1550,11 +1552,13 @@ External Setpoint Generation:
 			<AxisPara>
 				<General UnitName="um"/>
 				<Dynamic Acceleration="5050" Deceleration="5050" Jerk="5100500" DelayTime="0.008"/>
-				<Velo Maximum="500"/>
+				<Velo Maximum="100"/>
 				<OtherSettings AllowMotionCmdToSlave="true"/>
 			</AxisPara>
 			<Encoder Name="Enc" EncType="29">
 				<EncPara ScaleFactorNumerator="1" ScaleFactorDenominator="1000" MaxCount="#xffffffff">
+					<SoftEndMinControl Enable="true" Range="9000"/>
+					<SoftEndMaxControl Enable="true" Range="79551"/>
 					<Inc RefSoftSyncMask="#x0000ffff"/>
 				</EncPara>
 				<Vars VarGrpType="1">
@@ -1760,11 +1764,13 @@ External Setpoint Generation:
 			<AxisPara>
 				<General UnitName="um"/>
 				<Dynamic AccelerationMaximum="1000" DecelerationMaximum="1000" Acceleration="1000" Deceleration="1000" Jerk="5000" DelayTime="0.008"/>
-				<Velo Maximum="625"/>
+				<Velo Maximum="300"/>
 				<OtherSettings AllowMotionCmdToSlave="true"/>
 			</AxisPara>
 			<Encoder Name="Enc" EncType="29">
 				<EncPara ScaleFactorNumerator="1" ScaleFactorDenominator="1000" MaxCount="#xffffffff">
+					<SoftEndMinControl Enable="true" Range="16300"/>
+					<SoftEndMaxControl Enable="true" Range="23200"/>
 					<Inc RefSoftSyncMask="#x0000ffff"/>
 				</EncPara>
 				<Vars VarGrpType="1">
@@ -1970,12 +1976,15 @@ External Setpoint Generation:
 			<AxisPara>
 				<General UnitName="um"/>
 				<Dynamic AccelerationMaximum="1000" DecelerationMaximum="1000" Acceleration="1000" Deceleration="1000" Jerk="5000" DelayTime="0.008"/>
-				<Velo Maximum="625"/>
+				<Velo Maximum="300"/>
 				<OtherSettings AllowMotionCmdToSlave="true"/>
 			</AxisPara>
 			<Encoder Name="Enc" EncType="29">
 				<EncPara ScaleFactorNumerator="1" ScaleFactorDenominator="1000" MaxCount="#xffffffff">
+					<SoftEndMinControl Enable="true" Range="17400"/>
+					<SoftEndMaxControl Enable="true" Range="24500"/>
 					<Inc RefSoftSyncMask="#x0000ffff"/>
+					<ParameterChanged>13</ParameterChanged>
 				</EncPara>
 				<Vars VarGrpType="1">
 					<Name>Inputs</Name>
@@ -2180,7 +2189,7 @@ External Setpoint Generation:
 			<AxisPara>
 				<General UnitName="urad"/>
 				<Dynamic Acceleration="64082.2" Deceleration="64082.2" Jerk="711156" DelayTime="0.008"/>
-				<Velo Maximum="7042"/>
+				<Velo Maximum="50"/>
 				<OtherSettings AllowMotionCmdToSlave="true"/>
 			</AxisPara>
 			<Encoder Name="Enc" EncType="29">
